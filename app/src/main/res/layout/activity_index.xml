@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.IndexActivity">
+
+    <!--fragment-->
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/index_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></androidx.fragment.app.FragmentContainerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F9FCFF"/>
+
+    <!--引入底部导航栏-->
+    <!--    <include layout="@layout/menu" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/llhome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/homeImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/selector_home"
+                android:layout_gravity="center_horizontal"
+                > </ImageView>
+            <TextView
+                android:id="@+id/tvhome"
+                android:text="首页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llincome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/incomeImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/selector_income"
+                android:layout_gravity="center_horizontal"> </ImageView>
+            <TextView
+                android:id="@+id/tvincome"
+                android:text="记录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llsearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/searchImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/selector_search"
+                android:layout_gravity="center_horizontal"
+                > </ImageView>
+            <TextView
+                android:id="@+id/tvsearch"
+                android:text="搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llmine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageView
+                android:id="@+id/mineImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/selector_mine"
+                android:layout_gravity="center_horizontal"
+                > </ImageView>
+            <TextView
+                android:id="@+id/tvmine"
+                android:text="我的"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
